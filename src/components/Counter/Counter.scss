@@ -1,0 +1,36 @@
+.Counter {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    overflow: hidden;
+
+    > button {
+        height: 100%;
+        width: 60px;
+        height: 60px;
+        background: rgb(77, 77, 77);
+        color: pink;
+        font-size: 3em;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            filter: brightness(90%)
+        }
+
+        &:active {
+            transform: translate(2px,2px)
+        }
+    }
+
+    > h2 {
+        margin: 0 10px;
+        width: 40px;
+        overflow: hidden;
+        text-align: center;
+    }
+}

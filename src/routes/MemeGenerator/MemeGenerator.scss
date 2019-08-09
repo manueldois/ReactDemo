@@ -1,0 +1,91 @@
+/// Stroke font-character
+/// @param  {Integer} $stroke - Stroke width
+/// @param  {Color}   $color  - Stroke color
+/// @return {List}            - text-shadow list
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke * -1;
+  @for $i from $from through $stroke {
+    @for $j from $from through $stroke {
+      $shadow: append($shadow, $i * 1px $j * 1px 0 $color, comma);
+    }
+  }
+  @return $shadow;
+}
+/// Stroke font-character
+/// @param  {Integer} $stroke - Stroke width
+/// @param  {Color}   $color  - Stroke color
+/// @return {Style}           - text-shadow
+@mixin stroke($stroke, $color) {
+  text-shadow: stroke($stroke, $color);
+}
+
+.MemeGeneratorPage {
+  padding: 30px;
+  margin: auto;
+
+  > h3.loading {
+    text-align: center;
+  }
+
+  > .controls {
+    margin: 10px 0;
+
+    > button[name="rnd_meme"] {
+      margin: auto;
+    }
+
+    > div {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      > label {
+        margin: 0 8px;
+      }
+    }
+
+    > label[for="size"] {
+      display: block;
+      text-align: center;
+      margin-top: 6px;
+    }
+  }
+
+  > .editor {
+    position: relative;
+    width: 100%;
+    max-height: 60vh;
+    display: block;
+
+    > img {
+      display: block;
+      max-height: 60vh;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    > input {
+      position: absolute;
+      left: 0;
+
+      background: none;
+      border: none;
+      text-align: center;
+      width: 100%;
+      @include stroke(2, black);
+
+      &[name="top_text"] {
+        top: 5%;
+      }
+
+      &[name="bottom_text"] {
+        bottom: 5%;
+      }
+    }
+  }
+
+  > button[name="save_meme"] {
+    margin: 20px auto;
+  }
+}
