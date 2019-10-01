@@ -18,11 +18,11 @@ class Nav extends React.Component {
             <nav>
                 <img className="logo" src={logo}></img>
                 <div className="links">
-                    <NavLink to="/" exact activeClassName="active" >Home</NavLink>
-                    <NavLink to="/memegenerator" exact activeClassName="active" >Meme Generator</NavLink>
-                    <NavLink to="/dataflow" exact activeClassName="active" >Data Flow</NavLink>
-                    <NavLink to="/forms" exact activeClassName="active" >Forms</NavLink>
-                    <NavLink to="/context" exact activeClassName="active">Context</NavLink>
+                    <NavLink to="./" exact activeClassName="active" >Home</NavLink>
+                    <NavLink to="./memegenerator" exact activeClassName="active" >Meme Generator</NavLink>
+                    <NavLink to="./dataflow" exact activeClassName="active" >Data Flow</NavLink>
+                    <NavLink to="./forms" exact activeClassName="active" >Forms</NavLink>
+                    <NavLink to="./context" exact activeClassName="active">Context</NavLink>
                 </div>
             </nav>
         )
