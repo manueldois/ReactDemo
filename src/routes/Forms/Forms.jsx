@@ -13,7 +13,7 @@ const FormSchema = yup.object().shape({
         .required()
         .positive()
         .integer()
-        .max(100, 'Really that old?'),
+        .max(100, 'Really that old?').min(5, 'You should\'nt be online kid'),
 });
 
 

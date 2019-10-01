@@ -1,0 +1,8 @@
+.ContextPage {
+    select[name="fruit"]{
+        text-transform: capitalize;
+        > option {
+            text-transform: capitalize;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.FruitColorsComponent {
+    div.colors {
+        display: flex;
+        justify-content: center;
+
+        > div > span {
+            display: block;
+            text-align: center;
+        }
+    }
+    .FruitColorComponent {
+        margin: 10px;
+    }
+}

@@ -55,10 +55,7 @@ export default class MemeGenerator extends Component {
         if (type === 'text') {
             if (name === 'top_text') this.setState({ top_text: value })
             if (name === 'bottom_text') this.setState({ bottom_text: value })
-
         }
-
-
     }
 
     handleLoad = (e) => {
