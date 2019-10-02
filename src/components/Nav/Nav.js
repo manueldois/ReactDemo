@@ -23,6 +23,8 @@ class Nav extends React.Component {
                     <NavLink to="./dataflow" exact activeClassName="active" >Data Flow</NavLink>
                     <NavLink to="./forms" exact activeClassName="active" >Forms</NavLink>
                     <NavLink to="./context" exact activeClassName="active">Context</NavLink>
+                    <NavLink to="./forwardref" exact activeClassName="active">Forward Ref</NavLink>
+                    <NavLink to="./animations" exact activeClassName="active">Animations</NavLink>
                 </div>
             </nav>
         )

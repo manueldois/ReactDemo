@@ -1,3 +1,14 @@
 .homePage {
-  padding: 20px;   
+  padding: 20px;
+  position: relative;
+
+  img#logo {
+    position: absolute;
+    width: 50vmin;
+    animation: rotate 2s infinite alternate;
+    @keyframes rotate {
+      0% {transform: rotate(0deg)}
+      100% {transform: rotate(360deg)}
+    }
+  }
 }
