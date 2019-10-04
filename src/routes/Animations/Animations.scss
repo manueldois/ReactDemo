@@ -1,18 +1,30 @@
 .AnimationPage {
-  article[name="CubeAnimation"] {
+  article {
     width: 100%;
     border: 2px solid white;
     padding: 20px;
 
-    > div.cubeContainer {
+    &[name="CubeAnimation"] {
+      > div.cubeContainer {
         margin: auto;
         width: fit-content;
         height: fit-content;
         padding: 70px;
 
         > div.cube {
-            position: absolute;
+          position: absolute;
         }
+      }
+    }
+
+    &[name="ListAnimation"] {
+      min-height: 400px;
+
+      > .UserList {
+        margin: auto;
+        display: block;
+        height: 400px;
+      }
     }
   }
 }

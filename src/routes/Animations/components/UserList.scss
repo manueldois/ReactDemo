@@ -1,0 +1,56 @@
+.UserList {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid white;
+  position: relative;
+
+  > header {
+    width: 100%;
+    background-color: rgb(59, 185, 0);
+    height: 45px;
+    position: relative;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.308);
+
+    > h3 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      margin: 0;
+      left: 50%;
+    }
+
+    > .LoadingButton {
+      transform: translate(-50%, -50%);
+      top: 50%;
+      right: 0%;
+      width: 25px;
+    }
+  }
+
+  > ul {
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    // Ul needs a set height to scroll. Does not care about parent height
+    height: calc(100% - 45px); 
+
+    .UserListItem {
+      margin: 5px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  > small {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20px + 45px;
+    left: 50%;
+  }
+}

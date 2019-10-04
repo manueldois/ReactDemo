@@ -13,11 +13,10 @@ export default class FruitColorsList extends React.Component {
     render() {
         const fruit = fruitsData[this.context]
         if(!fruit) return (<div></div>)
-        console.log(fruit)
 
-        const fruitColors = fruit.colors.map(color => {
+        const fruitColors = fruit.colors.map((color, i) => {
             return (
-                <div key={color}>
+                <div key={i}>
                     {/* No need to pass the fruit name, FruitColor component will get it in context */}
                     <FruitColor color={color}></FruitColor> 
                     <span>{color.toUpperCase()}</span>

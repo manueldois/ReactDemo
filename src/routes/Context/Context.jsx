@@ -20,9 +20,9 @@ export default class ContextPage extends React.Component {
     }
 
     render() {
-        const fruitOptions = Object.keys(fruitData).map(fruitName => {
+        const fruitOptions = Object.keys(fruitData).map((fruitName, i) => {
             return (
-                <option value={fruitName}>{fruitName}</option>
+                <option value={fruitName} key={i}>{fruitName}</option>
             )
         })
 

@@ -1,0 +1,13 @@
+.LoadingButton {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  border: none;
+  background: none;
+
+  > img {
+    width: 100%;
+    filter: invert(100%);
+    transform: rotate(0deg);
+  }
+}
