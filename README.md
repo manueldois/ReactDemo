@@ -1,3 +1,3 @@
 ## Demo react app
 
-Live at https://manueldois.github.io/ReactDemo/
+Live at https://manueldois.github.io/React-demo/
